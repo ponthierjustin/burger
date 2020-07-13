@@ -9,6 +9,8 @@ const orm = {
     });
   },
 };
+// INSERT ONE ITEM FUNCTION
+// UPDATE FUNCTION
 
 
 
