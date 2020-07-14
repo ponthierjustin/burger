@@ -8,15 +8,15 @@ const orm = {
       cb(result);
     });
   },
-  insertOne: function (table, col, val, cb) {
+/*   insertOne: function (table, col, val, cb) {
     const query =
       "INSERT INTO " + table + " (" + col + ") VALUES (" + val + ") ";
     console.log(query);
-    connection.query(query, [table, col, val], function (err, results) {
+    connection.query(query, val, function (err, results) {
       if (err) throw err;
-      cb(result);
+      cb(results);
     });
-  },
+  }, */
 };
 // INSERT ONE ITEM FUNCTION
 // UPDATE FUNCTION
