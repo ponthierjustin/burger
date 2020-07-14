@@ -14,7 +14,7 @@ const orm = {
     console.log(query);
     connection.query(query, [table, col, val], function (err, results) {
       if (err) throw err;
-      cb(result);
+      cb(results);
     });
   },
 };

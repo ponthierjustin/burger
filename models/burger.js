@@ -5,7 +5,8 @@ const burger = {
        orm.selectAll("burgers", function(res){
            cb(res);
        });
-   } 
+   },
+   
 }
 
 
