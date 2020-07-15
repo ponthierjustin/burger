@@ -17,10 +17,10 @@ $(function () {
     });
   });
   $(".update-food").on("click", function (event) {
-    var id = $(this).data("id");
-    var eatBurger = $(this).data(1);
+    const id = $(this).data("id");
+    const eatBurger = $(this).data(1);
 
-    var devouredBurger = {
+    const devouredBurger = {
       devoured: eatBurger,
     };
 
