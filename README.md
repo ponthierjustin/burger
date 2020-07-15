@@ -28,9 +28,6 @@
   ## Contributions
 
   Solo project
-
-  ## Tests
-
  
 
   ## License
