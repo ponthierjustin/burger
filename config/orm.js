@@ -19,7 +19,7 @@ const orm = {
     });
   },
   updateOne: function(table, objVals, condition, id, cb){
-    const query = "UPDATE ?? SET ?? = ? WHERE id = ??";
+    const query = "UPDATE ?? SET ?? = ? WHERE id = ?;";
     connection.query(query, [table, objVals, condition, id], function(err, results){
       if (err) throw err;
       cb(results);

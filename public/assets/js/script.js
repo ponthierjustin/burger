@@ -18,5 +18,25 @@ $(function() {
       location.reload();
     });
   });
+  $(".update-food").on("click", function(event) {
+    var id = $(this).data("id");
+    var eatBurger = $(this).data(1);
+
+    var devouredBurger = {
+      devoured: eatBurger
+    };
+
+    // Send the PUT request.
+    $.ajax("/api/burgers/" + id, {
+      type: "PUT",
+      data: devouredBurger
+    }).then(
+      function() {
+        console.log("changed devoured to", devouredBurger);
+        // Reload the page to get the updated list
+        location.reload();
+      }
+    );
+  });
   
 })
