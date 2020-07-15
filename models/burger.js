@@ -11,6 +11,11 @@ const burger = {
       cb(res);
     });
   }, 
+  updateOne: function(objVals, condition, id, cb) {
+    orm.updateOne("burgers", objVals, condition, id, function(res){
+      cb(res);
+    });
+  }
    
 }
 
